@@ -1,0 +1,27 @@
+<!--pages/movie/movie.wxml-->
+<scroll-view scroll-y>
+<!-- 第一部分  -->
+<view class='meta' style='background:url({{movie.image}})'>
+  <view class='bg'>
+  <view class='movie'>
+  <view class='tu'>
+    <image class='poster' src='{{movie.image}}' background-size='cover'></image>
+  </view>
+  <view class='message'>
+    <text class='rating'>{{movie.alt_title}}</text><view></view>
+    <text class='title'>评分：{{movie.rating.average}}</text>
+  </view>
+  </view>
+  </view>
+</view>
+<view class='page-body'>
+<view>
+类型：<text wx:for="{{type}}">{{item.name}}/ </text></view><view>
+主演：<text wx:for="{{yan}}">{{item}}</text></view>
+<view class='times'>
+<text>上映：{{movie.attrs.country}} </text>
+<text> {{movie.attrs.movie_duration}}</text><view></view>
+<text>简介：{{movie.summary}}</text>
+</view>
+</view>
+</scroll-view>

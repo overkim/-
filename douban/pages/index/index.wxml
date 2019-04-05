@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<!-- 第一部分  -->
+<navigator url='../search/search'>
+<view class='page-header'>
+<input bindinput='search' class='page-header-text' placeholder='搜索'/>
+</view>
+</navigator>
+<!-- 第二部分 -->
+<scroll-view scroll-y class='page-body'>
+<navigator url='../movie/movie?id={{item.id}}' wx:for="{{movies}}" wx:key="">
+     <view class='item'>
+     <image src='{{item.images.large}}'></image>
+     <view class='meta'>
+     <text class='text1'>{{item.title}}</text>
+     <view class='fen'><text>{{item.rating.average}}</text></view><view class='clear'></view>
+     <text class='text2'>{{item.original_title}}</text>
+      <text class='text2 text3'>({{item.year}})</text><view></view>
+      <text class='sub-title text4'>{{item.directors[0].name}}</text>
+     </view>
+     </view>
+</navigator>
+</scroll-view>

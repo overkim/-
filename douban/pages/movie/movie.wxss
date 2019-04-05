@@ -1,0 +1,70 @@
+/* pages/movie/movie.wxss */
+.meta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400rpx;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg{
+  width: 100%;
+  height:400rpx;
+  opacity: 0.8;
+  z-index:100; 
+  background-color:#040b15;
+}
+
+.movie{
+  width: 100%;
+  height: auto;
+  margin-top: 136rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx; 
+  display: flex;
+  flex: 1;
+}
+
+.movie .tu{
+  width: 230rpx;
+  height: 300rpx;
+}
+
+.tu .poster{
+  width: 230rpx;
+  height: 100%;
+}
+
+ .movie .message{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+} 
+
+.movie .message .rating{
+  margin-top: 20rpx;
+  color: white;
+  font-size: 40rpx;
+}
+
+.movie .message .title{
+  font-size: 42rpx;
+  color: white;
+  position: relative;
+  top: 27rpx;
+}
+
+.page-body{
+  width: 92%;
+  height: 1000rpx;
+  margin-top:80rpx;
+  margin-left: 30rpx;
+  font-size: 37rpx;
+}
+
+.content{
+  color: black;
+  font-size: 37rpx;
+}

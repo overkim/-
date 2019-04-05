@@ -1,0 +1,22 @@
+/**index.wxss**/
+.text2{
+  font-size: 13px;
+}
+.text1{
+  font-size: 16px;
+}
+.text3{
+  position: relative;
+  left: 3%;
+}
+.text4{
+  position: relative;
+  top: 7rpx;
+}
+.fen{
+  float: right;
+}
+.fen text{
+  color: red;
+  font-size: 11px;
+}
